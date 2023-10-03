@@ -24,7 +24,7 @@ class BinaryTree {
   }
 
   public void branch(Scanner sc,Node node){
-    System.out.println("Do you want to insert element on the left of "+node.data);
+    System.out.println("Do you want to insert element on the left of "+node.data +" True/False");
     boolean left =sc.nextBoolean();
     if(left){
       System.out.println("Enter the value that you want to insert on the left of "+node.data);
@@ -33,7 +33,7 @@ class BinaryTree {
       branch(sc,node.left);
     }
 
-    System.out.println("Do you want to insert element on the right of "+node.data);
+    System.out.println("Do you want to insert element on the right of "+node.data+" True/False");
     boolean right=sc.nextBoolean();
     if(right){
       System.out.println("Enter the value that you want to insert on the right of "+node.data);
